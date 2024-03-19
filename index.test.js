@@ -1,4 +1,5 @@
-const { Rectangle, Square, Triangle, Circle } = require('./index.js'); // Import only Rectangle class
+const { Rectangle, Square, Triangle, Circle } = require('./index.js'); 
+
 
 test('calculate rectangle area correctly', () => {
   const rectangle = new Rectangle(5, 4)
