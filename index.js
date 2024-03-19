@@ -66,20 +66,4 @@ class Circle extends Shape{
     }
 }
 
-const rec = new Rectangle(5,4)
-rec.calculateArea()
-rec.calculatePerimeter()
-
-const sqa = new Square(5)
-sqa.calculateArea()
-sqa.calculatePerimeter()
-
-const tri = new Triangle(10,5,7,8)
-tri.calculateArea()
-tri.calculatePerimeter()
-
-const circle = new Circle(7)
-circle.calculateArea()
-circle.calculatePerimeter()
-
 module.exports = {Rectangle, Square, Triangle, Circle}
