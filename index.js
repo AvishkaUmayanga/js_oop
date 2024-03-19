@@ -14,11 +14,11 @@ class Rectangle  extends Shape{
     }
     calculateArea(){
         let area = this.width * this.height
-        console.log(`Area : ${area}`)
+        return area;
     }
     calculatePerimeter(){
         let perimeter = 2 * (this.width + this.height)
-        console.log(`Perimeter : ${perimeter}`)
+        return perimeter;
     }
 }
 
@@ -29,7 +29,7 @@ class Square extends Rectangle{
     }
     calculatePerimeter(){
         let perimeter = 4 * this.side
-        console.log(`Perimeter : ${perimeter}`)
+        return perimeter;
     }
 }
 
@@ -43,11 +43,11 @@ class Triangle extends Shape{
     }
     calculateArea(){
         let area = (this.base * this.height)/2
-        console.log(`Area : ${area}`)
+        return area;
     }
     calculatePerimeter(){
         let perimeter = this.base + this.side1 + this.side2
-        console.log(`Perimeter : ${perimeter}`)
+        return perimeter;
     }
 }
 
@@ -58,11 +58,11 @@ class Circle extends Shape{
     }
     calculateArea(){
         let area = Math.PI * this.radius * this.radius
-        console.log(`Area : ${area}`)
+        return area;
     }
     calculatePerimeter(){
         let perimeter = 2 * Math.PI * this.radius
-        console.log(`Perimeter : ${perimeter}`)
+        return perimeter;
     }
 }
 
@@ -81,3 +81,5 @@ tri.calculatePerimeter()
 const circle = new Circle(7)
 circle.calculateArea()
 circle.calculatePerimeter()
+
+module.exports = {Rectangle, Square, Triangle, Circle}
